@@ -1,0 +1,15 @@
+{
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "configuration",
+    "setting",
+    "settings",
+    "eslintsetting",
+    "eslintsettings"
+  ],
+  "dependencies": {
+    "eslint": "^8.0.1"
+  }
+}
