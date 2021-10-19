@@ -161,7 +161,7 @@ module.exports = {
     "default-param-last": "error",
     "dot-notation": [
       "error",
-      {"allowKeywords": false}
+      {"allowKeywords": true}
     ],
     "eqeqeq": [
       "error",
