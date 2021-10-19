@@ -10,3 +10,13 @@ services:
     entrypoint: npm
     volumes:
       - .:/home/node/sources
+
+  node:
+    image: node:16.0.0
+    user: node
+    working_dir: /home/node/sources
+    tty: true
+    stdin_open: true
+    entrypoint: node
+    volumes:
+      - .:/home/node/sources
