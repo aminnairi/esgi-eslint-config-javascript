@@ -14,9 +14,7 @@ module.exports = {
     "for-direction": "error",
     "getter-return": [
       "error",
-      {
-        "allowImplicit": false
-      }
+      {"allowImplicit": false}
     ],
     "no-async-promise-executor": "error",
     "no-await-in-loop": "error",
@@ -26,9 +24,7 @@ module.exports = {
     "no-const-assign": "error",
     "no-constant-condition": [
       "error",
-      {
-        "checkLoops": true
-      }
+      {"checkLoops": true}
     ],
     "no-constructor-return": "error",
     "no-control-regex": "error",
@@ -39,9 +35,7 @@ module.exports = {
     "no-duplicate-case": "error",
     "no-duplicate-imports": [
       "error",
-      {
-        "includeExports": true
-      }
+      {"includeExports": true}
     ],
     "no-empty-character-class": "error",
     "no-empty-pattern": "error",
@@ -71,9 +65,7 @@ module.exports = {
     "no-prototype-builtins": "error",
     "no-self-assign": [
       "error",
-      {
-        "props": true
-      }
+      {"props": true}
     ],
     "no-self-compare": "error",
     "no-setter-return": "error",
@@ -82,9 +74,7 @@ module.exports = {
     "no-this-before-super": "error",
     "no-undef": [
       "error",
-      {
-        "typeof": true
-      }
+      {"typeof": true}
     ],
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
@@ -93,15 +83,11 @@ module.exports = {
     "no-unsafe-finally": "error",
     "no-unsafe-negation": [
       "error",
-      {
-        "enforceForOrderingRelations": true
-      }
+      {"enforceForOrderingRelations": true}
     ],
     "no-unsafe-optional-chaining": [
       "error",
-      {
-        "disallowArithmeticOperators": true
-      }
+      {"disallowArithmeticOperators": true}
     ],
     "no-unused-vars": [
       "error",
@@ -131,9 +117,7 @@ module.exports = {
     ],
     "valid-typeof": [
       "error",
-      {
-        "requireStringLiterals": true
-      }
+      {"requireStringLiterals": true}
     ],
     // SUGGESTIONS
     "accessor-pairs": [
@@ -157,16 +141,12 @@ module.exports = {
     "capitalized-comments": "off",
     "class-methods-use-this": [
       "error",
-      {
-        "enforceForClassFields": true
-      }
+      {"enforceForClassFields": true}
     ],
     "complexity": "off",
     "consistent-return": [
       "error",
-      {
-        "treatUndefinedAsUnspecified": true
-      }
+      {"treatUndefinedAsUnspecified": true}
     ],
     "consistent-this": [
       "error",
@@ -181,9 +161,7 @@ module.exports = {
     "default-param-last": "error",
     "dot-notation": [
       "error",
-      {
-        "allowKeywords": false
-      }
+      {"allowKeywords": false}
     ],
     "eqeqeq": [
       "error",
@@ -237,15 +215,11 @@ module.exports = {
     "no-div-regex": "error",
     "no-else-return": [
       "error",
-      {
-        "allowElseIf": true
-      }
+      {"allowElseIf": true}
     ],
     "no-empty": [
       "error",
-      {
-        "allowEmptyCatch": false
-      }
+      {"allowEmptyCatch": false}
     ],
     "no-empty-function": "error",
     "no-eq-null": "error",
@@ -254,9 +228,7 @@ module.exports = {
     "no-extra-bind": "error",
     "no-extra-boolean-cast": [
       "error",
-      {
-        "enforceForLogicalOperands": true
-      }
+      {"enforceForLogicalOperands": true}
     ],
     "no-extra-label": "error",
     "no-extra-semi": "error",
@@ -333,9 +305,7 @@ module.exports = {
     ],
     "no-multi-assign": [
       "error",
-      {
-        "ignoreNonDeclaration": false
-      }
+      {"ignoreNonDeclaration": false}
     ],
     "no-multi-str": "error",
     "no-negated-condition": "error",
@@ -357,9 +327,7 @@ module.exports = {
     "no-script-url": "error",
     "no-sequences": [
       "error",
-      {
-        "allowInParentheses": false
-      }
+      {"allowInParentheses": false}
     ],
     "no-shadow": [
       "error",
@@ -389,9 +357,7 @@ module.exports = {
     "no-useless-catch": "error",
     "no-useless-computed-key": [
       "error",
-      {
-        "enforceForClassMembers": true
-      }
+      {"enforceForClassMembers": true}
     ],
     "no-useless-concat": "error",
     "no-useless-constructor": "error",
@@ -408,9 +374,7 @@ module.exports = {
     "no-var": "error",
     "no-void": [
       "error",
-      {
-        "allowAsStatement": false
-      }
+      {"allowAsStatement": false}
     ],
     "no-warning-comments": [
       "error",
@@ -429,7 +393,7 @@ module.exports = {
     ],
     "one-var": [
       "error",
-      "always"
+      "never"
     ],
     "one-var-declaration-per-line": [
       "error",
@@ -445,15 +409,11 @@ module.exports = {
     "prefer-object-spread": "error",
     "prefer-promise-reject-errors": [
       "error",
-      {
-        "allowEmptyReject": true
-      }
+      {"allowEmptyReject": true}
     ],
     "prefer-regex-literals": [
       "error",
-      {
-        "disallowRedundantWrapping": true
-      }
+      {"disallowRedundantWrapping": true}
     ],
     "prefer-rest-params": "error",
     "prefer-spread": "error",
@@ -483,7 +443,10 @@ module.exports = {
     // LAYOUT & FORMATTING
     "array-bracket-newline": [
       "error",
-      "always"
+      {
+        "multiline": true,
+        "minItems": 2
+      }
     ],
     "array-bracket-spacing": [
       "error",
@@ -511,9 +474,7 @@ module.exports = {
     "brace-style": [
       "error",
       "1tbs",
-      {
-        "allowSingleLine": false
-      }
+      {"allowSingleLine": false}
     ],
     "comma-dangle": [
       "error",
@@ -609,9 +570,7 @@ module.exports = {
     "max-len": "off",
     "max-statements-per-line": [
       "error",
-      {
-        "max": 1
-      }
+      {"max": 1}
     ],
     "multiline-ternary": [
       "error",
@@ -638,9 +597,7 @@ module.exports = {
     ],
     "no-tabs": [
       "error",
-      {
-        "allowIndentationTabs": false
-      }
+      {"allowIndentationTabs": false}
     ],
     "no-trailing-spaces": [
       "error",
@@ -653,7 +610,15 @@ module.exports = {
     "nonblock-statement-body-position": "off",
     "object-curly-newline": [
       "error",
-      "always"
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "consistent": true
+        },
+        "ObjectPattern": "never",
+        "ImportDeclaration": "never",
+        "ExportDeclaration": "never"
+      }
     ],
     "object-curly-spacing": [
       "error",
