@@ -2,7 +2,8 @@
 
 module.exports = {
   "env": {
-    "node": true
+    "node": true,
+    "es2021": true
   },
   "extends": "./sources/index.js"
 };
