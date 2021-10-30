@@ -1,7 +1,12 @@
 "use strict";
 
 const {ESLint} = require("eslint");
-const eslint = new ESLint({"fix": true});
+
+const eslint = new ESLint({
+  "fix": true,
+  "useEslintrc": false
+});
+
 const formatter = eslint.loadFormatter("stylish");
 
 eslint.lintFiles(process.argv.slice(2)).then((lintResults) => {
