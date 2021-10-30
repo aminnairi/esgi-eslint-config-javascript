@@ -1,10 +1,11 @@
 "use strict";
 
 const {ESLint} = require("eslint");
+const configuration = require("../index.js");
 
 const eslint = new ESLint({
   "fix": true,
-  "useEslintrc": false
+  "baseConfig": configuration
 });
 
 const formatter = eslint.loadFormatter("stylish");
