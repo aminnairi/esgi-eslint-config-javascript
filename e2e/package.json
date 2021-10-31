@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "eslint": "eslint --fix index.bad.js"
+    "eslint": "esi-eslint-config-javascript index.bad.js"
   },
   "devDependencies": {
     "eslint": "8.1.0"

@@ -3,7 +3,9 @@
     "name": "École Supérieure de Génie Informatique",
     "url": "https://github.com/aminnairi"
   },
-  "bin": "build/binary/index.js",
+  "bin": {
+    "esgi-eslint-config-javascript": "build/binary/index.js"
+  },
   "bugs": {
     "url": "https://github.com/aminnairi/esgi-eslint-config-javascript/issues"
   },
