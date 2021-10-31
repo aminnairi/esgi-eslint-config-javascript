@@ -30,7 +30,7 @@ jobs:
       - name: Tarball rename
         run: mv *.tgz package.tgz
 
-      - name: Installation
+      - name: Test
         run: docker-compose run --rm --user root -T npx --prefix e2e ./package.tgz e2e/index.bad.js
 
       - name: Diff
