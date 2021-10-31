@@ -1,0 +1,36 @@
+name: E2E
+
+on:
+  pull_request:
+    branches:
+      - development
+
+  push:
+    branches:
+      - development
+
+jobs:
+  name: Check that the package can be installed and is usable
+  runs-on: ubuntu-20.04
+
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Dependencies installation
+      run: docker-compose run --rm --user root -T npm install
+
+    - name: Build
+      run: docker-compose run --rm --user root -T npm run build
+
+    - name: Tarball
+      run: docker-compose run --rm --user root -T npm pack
+
+    - name: Tarball rename
+      run: mv *.tgz package.tgz
+
+    - name: Installation
+      run: docker-compose run --rm --user root -T npx --prefix e2e ./package.tgz e2e/index.bad.js
+
+    - name: Diff
+      run: diff e2e/index.bad.js e2e/index.good.js
